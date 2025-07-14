@@ -1,0 +1,21 @@
+{
+  "name": "TimeTracker Progressive Web App",
+  "short_name": "PWA TimeTracker",
+  "description": "TimeTracker progressive web app",
+  "theme_color": "#191c0f",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-icon-512Asset 2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 

@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+import TimeTrackerApp from '../components/TimeTrackerApp.jsx';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/pwa-icon-512.png" />
+    <title>TimeTracker PWA - Work Cycle Management</title>
+  </head>
+  <body class="bg-black/80 text-white min-h-screen">
+    <div class="text-center mb-8 pt-8">
+      
+    
+    <TimeTrackerApp client:load/>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+  </body>
+</html>
